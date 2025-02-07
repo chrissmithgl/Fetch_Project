@@ -8,7 +8,7 @@
   - FINAL_QUANTITY column in the Transactions table has a large number of entries with a "zero" or non-integer numbers; 
     also the data type for all its values is set to string despite being numbers (Python code lines 7, 31 and 33)
   - FINAL_SALE column in the Transactions table contains a large number of entries with just a space; also the data type for all its values is set to      string (Python code line 27)
-  - All timestamp data in any of the three tables has a "Z" at the end; also the data type for all its values is set to string (Python code lines 7        and 9)
+  - All timestamp data in any of the three tables has a "Z" at the end; also the data type for all its values is set to string (Python code lines 7        and 82)
   - GENDER column in the Users table has different unique entries for similar things. For example there's "non-binary" and "Non-Binary", 
     and "prefer_not_to_say" and "Prefer not to say" (Python code line 17)
   - In the Transactions table, the SCAN_DATE will sometimes be one day ahead of the PURCHASE_DATE (Python code line 7)
