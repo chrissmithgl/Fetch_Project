@@ -1,5 +1,7 @@
 ## Construct an email or slack message that is understandable to a product or business leader who is not familiar with your day-to-day work. Summarize the results of your investigation
 
+### Key data quality issues and outstanding questions about the data:
+
 Hi [Product or Business Leader],
 
 I was analyzing the Users, Products, and Transactions datasets and found multiple quality issues with the data that I have detailed below:
@@ -14,11 +16,13 @@ General Quality:
   - GENDER column in the Users table has different unique entries for similar things. For example there's "non-binary" and "Non-Binary", and "prefer_not_to_say" and "Prefer not to say"
   - In the Transactions table, the SCAN_DATE will sometimes be one day ahead of the PURCHASE_DATE
 
-Also, I noticed an interesting trend with the data. As you can see in Tableau dashboard I've linked at the bottom, male customers tend to buy items from the "Snacks" and "Health & Wellness" categories 
-while female customers buy from a much more varied selection of products. There were lots of empty rows I had to exclude in order to properly visualize this data so this analysis is incomplete.
+### One interesting trend in the data:
 
-In order to better work with this data I will need additional help cleaning it up. Maybe one or two other people to assist me. There is lots of missing data in all three tables and formatting 
-errors throughout (as detailed in the bullet points above). Either, a cleaner pull of the data needs to be done or we would need to spend a day cleaning up the data to fill in or delete empty 
-rows and make corrections to several columns.
+Also, I noticed an interesting trend with the data. As you can see in Tableau dashboard I've linked at the bottom, male customers tend to buy items from the "Snacks" and "Health & Wellness" categories while female customers buy from a much more varied selection of products. There were lots of empty rows I had to exclude in order to properly visualize this data so this analysis is incomplete.
+
+### Explain what additional help, info, etc. you need to make sense of the data and resolve any outstanding issues:
+
+In order to better work with this data I will need additional help cleaning it up. Maybe one or two other people to assist me. There is lots of missing data in all three tables and formatting errors throughout (as detailed in the bullet points above). Either, a cleaner pull of the data needs
+to be done or we would need to spend a day cleaning up the data to fill in or delete empty rows and make corrections to several columns.
 
 Tableau Dashboard: https://public.tableau.com/views/FetchProject/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
