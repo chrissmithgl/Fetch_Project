@@ -14,7 +14,7 @@ General Quality:
   - GENDER column in the Users table has different unique entries for similar things. For example there's "non-binary" and "Non-Binary", and "prefer_not_to_say" and "Prefer not to say"
   - In the Transactions table, the SCAN_DATE will sometimes be one day ahead of the PURCHASE_DATE
 
-Also, I noticed an interesting trend with the data. As you can see in Tableau dashboard I've linked below, male customers tend to buy items from the "Snacks" and "Health & Wellness" categories 
+Also, I noticed an interesting trend with the data. As you can see in Tableau dashboard I've linked at the bottom, male customers tend to buy items from the "Snacks" and "Health & Wellness" categories 
 while female customers buy from a much more varied selection of products. There were lots of empty rows I had to exclude in order to properly visualize this data so this analysis is incomplete.
 
 In order to better work with this data I will need additional help cleaning it up. Maybe one or two other people to assist me. There is lots of missing data in all three tables and formatting 
