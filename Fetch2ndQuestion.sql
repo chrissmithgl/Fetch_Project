@@ -28,8 +28,10 @@ Limit 5
 
 /*
 Which is the leading brand in the Dips & Salsa category?
-For this question I am assuming that by "leading brand" you mean the brand that's selling most and that FINAL_SALE is the best indicator for whether a brand is leading or not.
-I thought about using FINAL_QUANTITY as an indicator but concluded FINAL_SALE was better because you can sum up the value of all the goods sold. */
+For this question I am assuming that by "leading brand" you mean the brand that's selling most and that FINAL_SALE is the best indicator for whether 
+a brand is leading or not. I thought about using FINAL_QUANTITY as an indicator but concluded FINAL_SALE was better because you can sum up the value 
+of all the goods sold rather than just the amount of each good sold. After using this query we found out that the leading brand in the "Dips & 
+Salsas" category is Tostitos. */
 
 Select p.BRANDS, sum(t.FINAL_SALE) as Revenue_per_brand
 From  Transactions t
