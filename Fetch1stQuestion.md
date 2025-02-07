@@ -14,5 +14,5 @@
   - In the Transactions table, the SCAN_DATE will sometimes be one day ahead of the PURCHASE_DATE (Python code line 7)
 
 ## Are there any fields that are challenging to understand?
-- The FINAL_QUANTITY column in the Transactions table confuses me because in some rows it says "zero" and I am not sure if that's somehow correct or a data error. Also it has non-integer values which I'm not sure if they're referring to the weight of produce being bought or what.
+- The FINAL_QUANTITY column in the Transactions table confuses me because in some rows it says "zero" and I am not sure if that's somehow correct or a data error. Also it has non-integer values which I'm not sure if they're referring to the weight of produce being bought or something else.
 - Not sure if the SCAN_DATE column is referring to the date when the product was scanned into the store or when it was scanned to be purchased
