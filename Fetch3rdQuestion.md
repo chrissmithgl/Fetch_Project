@@ -3,16 +3,19 @@
 Hi [Product or Business Leader],
 
 I was analyzing the Users, Products, and Transactions datasets and found multiple quality issues with the data that I have detailed below:
+ 
 Missing Data:
   - Products table has empty rows in all its columns; column CATEGORY_4 is 92% empty
   - Transactions table has empty rows in the BARCODE column and rows with just a space in the FINAL_SALE column
   - Users table has empty rows in the BIRTH_DATE, STATE, LANGUAGE, and GENDER columns
+
 General Quality:
-  - FINAL_QUANTITY column in the Transactions table has a large number of entries with a "zero" or non-integer numbers; also the data type for all its values is set to string
-  - FINAL_SALE column in the Transactions table contains a large number of entries with just a space; also the data type for all its values is set to string
-  - All timestamp data in any of the three tables has a Z at the end; also the data type for all its values is set to string
-  - GENDER column in the Users table has different unique entries for similar things. For example there's "non-binary" and "Non-Binary", and "prefer_not_to_say" and "Prefer not to say"
-  - In the Transactions table, the SCAN_DATE will sometimes be one day ahead of the PURCHASE_DATE
+  - FINAL_QUANTITY column in the Transactions table has a large number of entries with a "zero" or non-integer numbers; also the data type for all its values is set to string despite being numbers
+  - FINAL_SALE column in the Transactions table contains a large number of entries with just a space; also the data type for all its values is set to string (Python code line 27)
+  - All timestamp data in any of the three tables has a "Z" at the end; also the data type for all its values is set to string (Python code lines 7 and 82)
+  - GENDER column in the Users table has different unique entries for similar things. For example there's "non-binary" and "Non-Binary", and "prefer_not_to_say" and "Prefer not to say" (Python code line 17)
+  - In the Transactions table, the SCAN_DATE will sometimes be one day ahead of the PURCHASE_DATE (Python code line 7)
+
 
 Also, I noticed an interesting trend with the data. As you can see in Tableau dashboard I've linked at the bottom, male customers tend to buy items from the "Snacks" and "Health & Wellness" categories while female customers buy from a much more varied selection of products. There were lots of empty rows I had to exclude in order to properly visualize this data so this analysis is incomplete. 
 
