@@ -20,8 +20,7 @@ In order to better work with this data I will need additional help cleaning it u
 - Clean the DATE data to remove the Z's
 - Make sure all the columns have the appropriate data types
 - Fix the FINAL_QUANTITY column so that there are no more "zero" rows and figure out if it's supposed to have only integers or not (and then adjust the numbers for that if needed)
+- Delete the empty spaces in the FINAL_SALE column
 - Clean up the unique entries for the GENDER column
-- Fill in empty rows where possible
-- Consider deleting column CATEGORY_4 since its mostly empty
 
 Tableau Dashboard: https://public.tableau.com/views/FetchProject/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
